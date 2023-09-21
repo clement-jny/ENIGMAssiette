@@ -1,16 +1,113 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<FrameLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/tv_display"
-        android:layout_width="wrap_content"
+    <!-- Restaurant Edit Text -->
+    <EditText
+        android:id="@+id/et_restaurant_name"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="aaaa"
-        android:textSize="30sp"/>
+        android:hint="@string/et_restaurant_name_hint"
+        android:inputType="text" />
 
-</FrameLayout>
+    <!-- Date & Time Layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Date Button -->
+        <Button
+            android:id="@+id/bt_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bt_date"
+            android:onClick="openDateDialog" />
+
+        <!-- Time Button -->
+        <Button
+            android:id="@+id/bt_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bt_time"
+            android:onClick="openTimeDialog" />
+    </LinearLayout>
+
+    <!-- Decoration Rating Layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Decoration Text View -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_decoration"/>
+
+        <!-- Decoration Rating Bar -->
+        <RatingBar
+            android:id="@+id/rb_decoration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+    <!-- Food Rating Layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Food Text View -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_food"/>
+
+        <!-- Food Rating Bar -->
+        <RatingBar
+            android:id="@+id/rb_food"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <!-- Service Rating Layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Service Text View -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_service"/>
+
+        <!-- Service Rating Bar -->
+        <RatingBar
+            android:id="@+id/rb_service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+    <!-- Review Edit Text -->
+    <EditText
+        android:id="@+id/et_review"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:hint="@string/et_review_hint"
+        android:lines="5" />
+
+    <Button
+        android:id="@+id/bt_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/bt_save"/>
+</LinearLayout>

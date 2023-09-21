@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">ENIGMAssiette</string>
+    <string name="et_restaurant_name_hint">Nom du restaurant</string>
+    <string name="tv_decoration">Decoration rating</string>
+    <string name="tv_food">Food rating</string>
+    <string name="tv_service">Service rating</string>
+    <string name="bt_date">Select date</string>
+    <string name="bt_time">Select time</string>
+    <string name="et_review_hint">Review</string>
+    <string name="bt_save">Save</string>
 </resources>
