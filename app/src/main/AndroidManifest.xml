@@ -20,8 +20,6 @@
             </intent-filter>
         </activity>
 
-        <!--<activity android:name="com.example.android.explicitintent.ChildActivity"></activity>-->
-
+        <activity android:name="com.example.enigmassiette.RestaurantListActivity"></activity>
     </application>
-
 </manifest>

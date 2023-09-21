@@ -98,11 +98,11 @@
 
     <!-- Review Edit Text -->
     <EditText
-        android:id="@+id/et_review"
+        android:id="@+id/et_restaurant_review"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textMultiLine"
-        android:hint="@string/et_review_hint"
+        android:hint="@string/et_restaurant_review_hint"
         android:lines="5" />
 
     <Button

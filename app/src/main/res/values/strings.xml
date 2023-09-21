@@ -6,6 +6,6 @@
     <string name="tv_service">Service rating</string>
     <string name="bt_date">Select date</string>
     <string name="bt_time">Select time</string>
-    <string name="et_review_hint">Review</string>
+    <string name="et_restaurant_review_hint">Review</string>
     <string name="bt_save">Save</string>
 </resources>
